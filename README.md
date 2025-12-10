@@ -2,59 +2,52 @@
 
 This is the official website for Tech Thrive Technology, built with HTML5 and CSS3.
 
-## 🚀 How to Publish to GitHub & Host Live
+**Live Repository:** [https://github.com/Ashik324/static-website](https://github.com/Ashik324/static-website)
 
-### Option 1: The Easy Way (GitHub Desktop / Web Upload)
+## 🚀 How to Publish/Update this Code
 
-1.  **Create a Repository:**
-    *   Go to [GitHub.com](https://github.com) and sign in.
-    *   Click the **+** icon in the top right and select **New repository**.
-    *   Name it `tech-thrive-website` (or similar).
-    *   Make sure it is **Public**.
-    *   Click **Create repository**.
+Since you have an existing repository, follow these steps to upload the latest code:
 
-2.  **Upload Files:**
-    *   If you are using the web interface, click **uploading an existing file** on the setup page.
-    *   Drag and drop all the files from this project folder (index.html, style.css, etc.) into the upload box.
-    *   Commit the changes.
+### Step 1: Open Terminal
+Open your terminal or command prompt in the folder where these files are located.
 
-### Option 2: The Developer Way (Command Line)
-
-If you have Git installed on your computer:
+### Step 2: Run Git Commands
+Copy and paste the following commands:
 
 ```bash
-# 1. Initialize Git
+# 1. Initialize Git (if not already done)
 git init
 
-# 2. Add all files
+# 2. Add your repository URL
+# If this is the first time connecting:
+git remote add origin https://github.com/Ashik324/static-website.git
+
+# OR, if you are updating an existing connection:
+git remote set-url origin https://github.com/Ashik324/static-website.git
+
+# 3. Add all the new files
 git add .
 
-# 3. Commit changes
-git commit -m "Initial website launch"
+# 4. Save the changes
+git commit -m "Update website design to professional version"
 
-# 4. Link to your GitHub repo (Replace URL with your actual repo URL)
-git remote add origin https://github.com/YOUR_USERNAME/tech-thrive-website.git
-
-# 5. Push to GitHub
+# 5. Send to GitHub
 git push -u origin main
 ```
 
-## 🌐 How to Go Live (GitHub Pages)
+## 🌐 Live Hosting (GitHub Pages)
 
-Once your code is on GitHub, you can host it for free:
+Once the code is pushed:
+1.  Go to [https://github.com/Ashik324/static-website/settings/pages](https://github.com/Ashik324/static-website/settings/pages)
+2.  Under **Build and deployment**, select **Source** -> **Deploy from a branch**.
+3.  Select **Branch** -> `main` -> `/ (root)`.
+4.  Click **Save**.
 
-1.  Go to your repository on GitHub.
-2.  Click on **Settings** (top tab).
-3.  On the left sidebar, click on **Pages**.
-4.  Under **Build and deployment** > **Source**, select **Deploy from a branch**.
-5.  Under **Branch**, select `main` (or `master`) and folder `/ (root)`.
-6.  Click **Save**.
+Your site will be live shortly!
 
-Wait about 1-2 minutes, and GitHub will give you a live URL (e.g., `https://your-username.github.io/tech-thrive-website/`).
+## 🛠 Local Development
 
-## 🛠 Project Setup (Local Development)
-
-To run this project locally on your machine:
+To run this project locally:
 
 1.  Install dependencies:
     ```bash

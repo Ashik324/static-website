@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Tech Thrive Technology</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">
-                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="45" stroke="#0B2545" stroke-width="6"/>
-                    <rect x="28" y="55" width="12" height="25" fill="#0B2545"/>
-                    <rect x="44" y="40" width="12" height="40" fill="#0B2545"/>
-                    <rect x="60" y="25" width="12" height="55" fill="#0B2545"/>
-                    <path d="M20 65 C 40 55, 55 45, 80 20" stroke="#14B8A6" stroke-width="6" stroke-linecap="round"/>
-                    <path d="M80 20 L 65 22 M 80 20 L 78 35" stroke="#14B8A6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Tech Thrive<br>Technology
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="6"/>
+                        <rect x="28" y="55" width="12" height="25" fill="currentColor"/>
+                        <rect x="44" y="40" width="12" height="40" fill="currentColor"/>
+                        <rect x="60" y="25" width="12" height="55" fill="currentColor"/>
+                        <path d="M20 65 C 40 55, 55 45, 80 20" stroke="#14B8A6" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M80 20 L 65 22 M 80 20 L 78 35" stroke="#14B8A6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="logo-text">Tech Thrive<br><span>Technology</span></div>
             </a>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
@@ -27,16 +32,16 @@
                 <a href="about.html" class="nav-link">About</a>
                 <a href="vision-mission.html" class="nav-link">Vision & Mission</a>
                 <a href="services.html" class="nav-link active">Services</a>
-                <a href="contact.html" class="nav-link">Contact Info</a>
-                <a href="enquiry.html" class="nav-link btn btn-primary" style="color: white;">Enquiry</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="enquiry.html" class="nav-link btn btn-primary">Enquiry</a>
             </nav>
         </div>
     </header>
 
-    <div class="page-header">
+    <div class="section bg-alt" style="padding: 6rem 0 4rem; text-align: center;">
         <div class="container">
-            <h1>Our Services</h1>
-            <p>Comprehensive Solutions for Your Business Growth</p>
+            <h1 class="animate-fade-up">Our Services</h1>
+            <p class="animate-fade-up delay-100" style="max-width: 600px; margin: 0 auto;">We deliver comprehensive technology solutions designed to solve complex business challenges and drive growth.</p>
         </div>
     </div>
 
@@ -44,65 +49,65 @@
         <div class="container">
             <div class="grid grid-2">
                 <!-- Service 1 -->
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/0B2545/FFFFFF?text=Web+Development" alt="Web Development">
+                <div class="service-card" style="padding: 0; display: flex; flex-direction: column;">
+                    <div style="height: 240px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web Development" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
                     </div>
-                    <div class="card-body">
+                    <div style="padding: 2.5rem;">
                         <h3>Web Development</h3>
-                        <p>We build responsive, high-performance websites tailored to your brand. From simple landing pages to complex web applications, we ensure your online presence is robust and scalable.</p>
-                        <ul style="list-style: disc; padding-left: 1.2rem; color: var(--color-text-light);">
-                            <li>Custom Website Design</li>
-                            <li>E-commerce Solutions</li>
-                            <li>CMS Development</li>
+                        <p>From landing pages to complex web applications, we build responsive, accessible, and performant websites.</p>
+                        <ul style="margin-top: 1rem; color: var(--color-text-light);">
+                            <li style="margin-bottom: 0.5rem;">• Custom UI/UX Design</li>
+                            <li style="margin-bottom: 0.5rem;">• E-commerce Platforms</li>
+                            <li style="margin-bottom: 0.5rem;">• CMS Integration</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/14B8A6/FFFFFF?text=App+Development" alt="App Development">
+                <div class="service-card" style="padding: 0; display: flex; flex-direction: column;">
+                    <div style="height: 240px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="App Development" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <div class="card-body">
+                    <div style="padding: 2.5rem;">
                         <h3>App Development</h3>
-                        <p>Turn your ideas into powerful mobile experiences. We develop native and cross-platform mobile applications for iOS and Android that are user-friendly and secure.</p>
-                        <ul style="list-style: disc; padding-left: 1.2rem; color: var(--color-text-light);">
-                            <li>iOS & Android Apps</li>
-                            <li>Cross-Platform Solutions</li>
-                            <li>App Maintenance</li>
+                        <p>Native and cross-platform mobile apps that provide seamless user experiences on iOS and Android.</p>
+                        <ul style="margin-top: 1rem; color: var(--color-text-light);">
+                            <li style="margin-bottom: 0.5rem;">• iOS & Android Apps</li>
+                            <li style="margin-bottom: 0.5rem;">• React Native / Flutter</li>
+                            <li style="margin-bottom: 0.5rem;">• App Maintenance</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/1e4066/FFFFFF?text=Social+Media" alt="Social Media Marketing">
+                <div class="service-card" style="padding: 0; display: flex; flex-direction: column;">
+                    <div style="height: 240px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Social Media" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <div class="card-body">
+                    <div style="padding: 2.5rem;">
                         <h3>Social Media Marketing</h3>
-                        <p>Enhance your brand visibility and engage with your audience. We create data-driven social media strategies to grow your following and convert leads.</p>
-                        <ul style="list-style: disc; padding-left: 1.2rem; color: var(--color-text-light);">
-                            <li>Content Strategy</li>
-                            <li>Community Management</li>
-                            <li>Paid Advertising</li>
+                        <p>Data-driven strategies to grow your brand, engage customers, and increase conversions.</p>
+                        <ul style="margin-top: 1rem; color: var(--color-text-light);">
+                            <li style="margin-bottom: 0.5rem;">• Content Strategy</li>
+                            <li style="margin-bottom: 0.5rem;">• Paid Advertising</li>
+                            <li style="margin-bottom: 0.5rem;">• Analytics & Reporting</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/0F766E/FFFFFF?text=AI+Solutions" alt="AI Solutions">
+                <div class="service-card" style="padding: 0; display: flex; flex-direction: column;">
+                    <div style="height: 240px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="AI Solutions" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <div class="card-body">
+                    <div style="padding: 2.5rem;">
                         <h3>AI Solutions</h3>
-                        <p>Leverage the power of Artificial Intelligence to automate processes and gain insights. We implement practical AI solutions that solve real business challenges.</p>
-                        <ul style="list-style: disc; padding-left: 1.2rem; color: var(--color-text-light);">
-                            <li>Chatbot Integration</li>
-                            <li>Data Analysis</li>
-                            <li>Process Automation</li>
+                        <p>Leverage artificial intelligence to automate workflows and gain predictive insights.</p>
+                        <ul style="margin-top: 1rem; color: var(--color-text-light);">
+                            <li style="margin-bottom: 0.5rem;">• Chatbot Integration</li>
+                            <li style="margin-bottom: 0.5rem;">• Process Automation</li>
+                            <li style="margin-bottom: 0.5rem;">• Data Analysis</li>
                         </ul>
                     </div>
                 </div>
@@ -112,32 +117,32 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <div class="logo" style="color: white; margin-bottom: 1rem;">Tech Thrive Technology</div>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo-text" style="color: white;">Tech Thrive<br><span>Technology</span></div>
                     <p>Your trusted technology partner for innovative digital solutions.</p>
                 </div>
-                <div>
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="services.html">Web Development</a></li>
-                        <li><a href="services.html">App Development</a></li>
-                        <li><a href="services.html">AI Solutions</a></li>
-                        <li><a href="services.html">Digital Marketing</a></li>
-                    </ul>
+                <div class="footer-nav">
+                    <div>
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html">Web Development</a></li>
+                            <li><a href="services.html">App Development</a></li>
+                            <li><a href="services.html">AI Solutions</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="copyright">
-                &copy; 2025 Tech Thrive Technology. All Rights Reserved.
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tech Thrive Technology. All Rights Reserved.</p>
             </div>
         </div>
     </footer>

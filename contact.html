@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Info - Tech Thrive Technology</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">
-                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="45" stroke="#0B2545" stroke-width="6"/>
-                    <rect x="28" y="55" width="12" height="25" fill="#0B2545"/>
-                    <rect x="44" y="40" width="12" height="40" fill="#0B2545"/>
-                    <rect x="60" y="25" width="12" height="55" fill="#0B2545"/>
-                    <path d="M20 65 C 40 55, 55 45, 80 20" stroke="#14B8A6" stroke-width="6" stroke-linecap="round"/>
-                    <path d="M80 20 L 65 22 M 80 20 L 78 35" stroke="#14B8A6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Tech Thrive<br>Technology
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="6"/>
+                        <rect x="28" y="55" width="12" height="25" fill="currentColor"/>
+                        <rect x="44" y="40" width="12" height="40" fill="currentColor"/>
+                        <rect x="60" y="25" width="12" height="55" fill="currentColor"/>
+                        <path d="M20 65 C 40 55, 55 45, 80 20" stroke="#14B8A6" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M80 20 L 65 22 M 80 20 L 78 35" stroke="#14B8A6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="logo-text">Tech Thrive<br><span>Technology</span></div>
             </a>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
@@ -35,15 +40,15 @@
 
     <div class="page-header">
         <div class="container">
-            <h1>Contact Info</h1>
-            <p>Get in Touch With Us</p>
+            <h1 class="animate-fade-up">Contact Info</h1>
+            <p class="animate-fade-up delay-100">Get in Touch With Us</p>
         </div>
     </div>
 
     <section class="section">
         <div class="container">
             <div class="grid grid-2" style="gap: 4rem;">
-                <div>
+                <div class="animate-fade-up delay-200">
                     <h2>Let's Start a Conversation</h2>
                     <p>Whether you have a question about our services, need a consultation, or just want to say hello, we'd love to hear from you. Our team is ready to answer all your questions.</p>
                     
@@ -83,8 +88,8 @@
                     </div>
                 </div>
                 
-                <div class="bg-alt" style="padding: 2rem; border-radius: var(--radius); border: 1px solid var(--color-border);">
-                    <h3 class="text-center">Ready to work with us?</h3>
+                <div class="bg-alt animate-fade-up delay-300" style="padding: 2.5rem; border-radius: var(--radius); border: 1px solid var(--color-border); display: flex; flex-direction: column; justify-content: center;">
+                    <h3 class="text-center" style="margin-bottom: 1rem;">Ready to work with us?</h3>
                     <p class="text-center" style="margin-bottom: 2rem;">Fill out our enquiry form and we'll get back to you within 24 hours.</p>
                     <div class="text-center">
                         <a href="enquiry.html" class="btn btn-primary" style="width: 100%;">Go to Enquiry Form</a>
@@ -97,8 +102,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div>
-                    <div class="logo" style="color: white; margin-bottom: 1rem;">Tech Thrive Technology</div>
+                <div class="footer-brand">
+                    <div class="logo-text" style="color: white;">Tech Thrive<br><span>Technology</span></div>
                     <p>Your trusted technology partner for innovative digital solutions.</p>
                 </div>
                 <div>

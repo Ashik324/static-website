@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vision & Mission - Tech Thrive Technology</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">
-                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="45" stroke="#0B2545" stroke-width="6"/>
-                    <rect x="28" y="55" width="12" height="25" fill="#0B2545"/>
-                    <rect x="44" y="40" width="12" height="40" fill="#0B2545"/>
-                    <rect x="60" y="25" width="12" height="55" fill="#0B2545"/>
-                    <path d="M20 65 C 40 55, 55 45, 80 20" stroke="#14B8A6" stroke-width="6" stroke-linecap="round"/>
-                    <path d="M80 20 L 65 22 M 80 20 L 78 35" stroke="#14B8A6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Tech Thrive<br>Technology
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="6"/>
+                        <rect x="28" y="55" width="12" height="25" fill="currentColor"/>
+                        <rect x="44" y="40" width="12" height="40" fill="currentColor"/>
+                        <rect x="60" y="25" width="12" height="55" fill="currentColor"/>
+                        <path d="M20 65 C 40 55, 55 45, 80 20" stroke="#14B8A6" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M80 20 L 65 22 M 80 20 L 78 35" stroke="#14B8A6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="logo-text">Tech Thrive<br><span>Technology</span></div>
             </a>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
@@ -35,8 +40,8 @@
 
     <div class="page-header">
         <div class="container">
-            <h1>Vision & Mission</h1>
-            <p>Our Guiding Principles</p>
+            <h1 class="animate-fade-up">Vision & Mission</h1>
+            <p class="animate-fade-up delay-100">Our Guiding Principles</p>
         </div>
     </div>
 
@@ -44,7 +49,7 @@
         <div class="container">
             <div class="grid grid-2" style="gap: 4rem;">
                 <!-- Vision -->
-                <div class="card" style="border-top: 4px solid var(--color-accent);">
+                <div class="card animate-fade-up delay-200" style="border-top: 4px solid var(--color-accent);">
                     <div class="card-body">
                         <h2 class="text-primary">Our Vision</h2>
                         <p style="font-size: 1.1rem; color: var(--color-text-light);">To become a trusted technology partner that empowers businesses to thrive through innovative digital products and data-driven strategies.</p>
@@ -53,15 +58,23 @@
                 </div>
 
                 <!-- Mission -->
-                <div class="card" style="border-top: 4px solid var(--color-primary);">
+                <div class="card animate-fade-up delay-300" style="border-top: 4px solid var(--color-primary);">
                     <div class="card-body">
                         <h2 class="text-primary">Our Mission</h2>
                         <p style="font-size: 1.1rem; color: var(--color-text-light);">To build high-quality web and mobile applications, manage effective social media presence, and implement practical AI solutions that solve real business problems.</p>
-                        <ul style="margin-top: 1rem; list-style: disc; padding-left: 1.5rem;">
-                            <li style="margin-bottom: 0.5rem;">Focus on clear communication and transparency.</li>
-                            <li style="margin-bottom: 0.5rem;">Commitment to on-time delivery.</li>
-                            <li style="margin-bottom: 0.5rem;">Continuous improvement and learning.</li>
-                            <li style="margin-bottom: 0.5rem;">Delivering measurable results for every client.</li>
+                        <ul style="margin-top: 1rem; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 10px;">
+                                <span style="color: var(--color-accent);">✓</span> Focus on clear communication and transparency.
+                            </li>
+                            <li style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 10px;">
+                                <span style="color: var(--color-accent);">✓</span> Commitment to on-time delivery.
+                            </li>
+                            <li style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 10px;">
+                                <span style="color: var(--color-accent);">✓</span> Continuous improvement and learning.
+                            </li>
+                            <li style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 10px;">
+                                <span style="color: var(--color-accent);">✓</span> Delivering measurable results for every client.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -72,8 +85,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div>
-                    <div class="logo" style="color: white; margin-bottom: 1rem;">Tech Thrive Technology</div>
+                <div class="footer-brand">
+                    <div class="logo-text" style="color: white;">Tech Thrive<br><span>Technology</span></div>
                     <p>Your trusted technology partner for innovative digital solutions.</p>
                 </div>
                 <div>

@@ -6,25 +6,29 @@
     <title>Home - Tech Thrive Technology</title>
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Tech Thrive Technology - Your partner in digital innovation. Web, App, AI, and Marketing solutions.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">
-                <!-- Updated SVG Logo based on reference image -->
-                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Circle Border -->
-                    <circle cx="50" cy="50" r="45" stroke="#0B2545" stroke-width="6"/>
-                    <!-- Growth Bars -->
-                    <rect x="28" y="55" width="12" height="25" fill="#0B2545"/>
-                    <rect x="44" y="40" width="12" height="40" fill="#0B2545"/>
-                    <rect x="60" y="25" width="12" height="55" fill="#0B2545"/>
-                    <!-- Upward Arrow -->
-                    <path d="M20 65 C 40 55, 55 45, 80 20" stroke="#14B8A6" stroke-width="6" stroke-linecap="round"/>
-                    <path d="M80 20 L 65 22 M 80 20 L 78 35" stroke="#14B8A6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Tech Thrive<br>Technology
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="6"/>
+                        <rect x="28" y="55" width="12" height="25" fill="currentColor"/>
+                        <rect x="44" y="40" width="12" height="40" fill="currentColor"/>
+                        <rect x="60" y="25" width="12" height="55" fill="currentColor"/>
+                        <path d="M20 65 C 40 55, 55 45, 80 20" stroke="#14B8A6" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M80 20 L 65 22 M 80 20 L 78 35" stroke="#14B8A6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    Tech Thrive<br><span>Technology</span>
+                </div>
             </a>
             
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -35,20 +39,30 @@
                 <a href="about.html" class="nav-link">About</a>
                 <a href="vision-mission.html" class="nav-link">Vision & Mission</a>
                 <a href="services.html" class="nav-link">Services</a>
-                <a href="contact.html" class="nav-link">Contact Info</a>
-                <a href="enquiry.html" class="nav-link btn btn-primary" style="color: white;">Enquiry</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="enquiry.html" class="nav-link btn btn-primary">Enquiry</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-bg-glow"></div>
         <div class="container">
-            <h1>Empowering Businesses to Thrive</h1>
-            <p>Turning your ideas into scalable, secure, and innovative digital products with cutting-edge technology.</p>
-            <div style="margin-top: 2rem;">
-                <a href="services.html" class="btn btn-primary" style="background-color: var(--color-accent); border: none;">Our Services</a>
-                <a href="contact.html" class="btn btn-outline" style="border-color: white; color: white; margin-left: 1rem;">Contact Us</a>
+            <div class="hero-content">
+                <span class="badge animate-fade-up">Innovation Partner</span>
+                <h1 class="animate-fade-up delay-100">Empowering Businesses <br><span class="text-gradient">To Thrive Digitally</span></h1>
+                <p class="animate-fade-up delay-200">We turn complex ideas into scalable, secure, and high-impact digital products. Your trusted partner for Web, Mobile, and AI solutions.</p>
+                <div class="hero-actions animate-fade-up delay-300">
+                    <a href="services.html" class="btn btn-primary">Explore Services</a>
+                    <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
         </div>
     </section>
@@ -56,15 +70,25 @@
     <!-- Brief About -->
     <section class="section">
         <div class="container">
-            <div class="grid grid-2" style="align-items: center;">
-                <div>
-                    <h2 class="text-primary">Who We Are</h2>
+            <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+                <div class="content-block">
+                    <h4 class="sub-heading">Who We Are</h4>
+                    <h2 class="section-heading">Architects of the <span class="text-primary">Digital Future</span></h2>
                     <p>Tech Thrive Technology provides end-to-end services including web development, app development, social media marketing, and AI solutions for startups and established brands.</p>
                     <p>Our goal is to act as a technology partner, turning client ideas into scalable and maintainable digital products.</p>
-                    <a href="about.html" class="btn btn-outline">Read More</a>
+                    <a href="about.html" class="link-arrow">Read More About Us <span class="arrow">→</span></a>
                 </div>
-                <div>
-                    <img src="https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/0B2545/FFFFFF?text=Innovation+Partner" alt="Team working" style="border-radius: var(--radius); box-shadow: var(--shadow-lg);">
+                <div class="image-block">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Team working">
+                        <div class="floating-card">
+                            <span class="icon">🚀</span>
+                            <div>
+                                <strong>Scalable Solutions</strong>
+                                <small>Built for growth</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,37 +97,46 @@
     <!-- Services Preview -->
     <section class="section bg-alt">
         <div class="container">
-            <div class="text-center" style="margin-bottom: 3rem;">
-                <h2>Our Core Services</h2>
-                <p>Comprehensive technology solutions tailored to your business needs.</p>
+            <div class="text-center" style="margin-bottom: 4rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                <h4 class="sub-heading">Our Expertise</h4>
+                <h2 class="section-heading">Comprehensive Technology Solutions</h2>
+                <p>Tailored strategies to elevate your business in the digital landscape.</p>
             </div>
             <div class="grid grid-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <h3 style="font-size: 1.2rem;">Web Development</h3>
-                        <p style="font-size: 0.9rem;">High-quality, responsive websites built for performance.</p>
+                <div class="card service-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
                     </div>
+                    <h3>Web Development</h3>
+                    <p>High-performance, responsive websites built for speed and conversion.</p>
+                    <a href="services.html" class="card-link">Learn more</a>
                 </div>
-                <div class="card">
-                    <div class="card-body text-center">
-                        <h3 style="font-size: 1.2rem;">App Development</h3>
-                        <p style="font-size: 0.9rem;">Native and cross-platform mobile applications.</p>
+                <div class="card service-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
                     </div>
+                    <h3>App Development</h3>
+                    <p>Native and cross-platform mobile applications that users love.</p>
+                    <a href="services.html" class="card-link">Learn more</a>
                 </div>
-                <div class="card">
-                    <div class="card-body text-center">
-                        <h3 style="font-size: 1.2rem;">AI Solutions</h3>
-                        <p style="font-size: 0.9rem;">Practical AI implementation for real business problems.</p>
+                <div class="card service-card highlight">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M12 2a10 10 0 0 1 10 10h-10V2z"></path><path d="M12 12L2.5 7.5"></path></svg>
                     </div>
+                    <h3>AI Solutions</h3>
+                    <p>Practical AI implementation to automate and optimize your business.</p>
+                    <a href="services.html" class="card-link">Learn more</a>
                 </div>
-                <div class="card">
-                    <div class="card-body text-center">
-                        <h3 style="font-size: 1.2rem;">Social Media</h3>
-                        <p style="font-size: 0.9rem;">Strategic marketing to grow your brand presence.</p>
+                <div class="card service-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
                     </div>
+                    <h3>Social Media</h3>
+                    <p>Strategic marketing to build your brand presence and engage audiences.</p>
+                    <a href="services.html" class="card-link">Learn more</a>
                 </div>
             </div>
-            <div class="text-center" style="margin-top: 2rem;">
+            <div class="text-center" style="margin-top: 4rem;">
                 <a href="services.html" class="btn btn-primary">View All Services</a>
             </div>
         </div>
@@ -112,42 +145,44 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <div class="logo" style="color: white; margin-bottom: 1rem;">
-                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="height: 30px; width: 30px;">
-                            <circle cx="50" cy="50" r="45" stroke="white" stroke-width="6"/>
-                            <rect x="28" y="55" width="12" height="25" fill="white"/>
-                            <rect x="44" y="40" width="12" height="40" fill="white"/>
-                            <rect x="60" y="25" width="12" height="55" fill="white"/>
-                            <path d="M20 65 C 40 55, 55 45, 80 20" stroke="#14B8A6" stroke-width="6" stroke-linecap="round"/>
-                            <path d="M80 20 L 65 22 M 80 20 L 78 35" stroke="#14B8A6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        Tech Thrive Technology
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo-text" style="color: white;">
+                        Tech Thrive<br><span>Technology</span>
                     </div>
-                    <p>Your trusted technology partner for innovative digital solutions.</p>
+                    <p>Your trusted technology partner for innovative digital solutions. Building the future, one line of code at a time.</p>
                 </div>
-                <div>
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="services.html">Web Development</a></li>
-                        <li><a href="services.html">App Development</a></li>
-                        <li><a href="services.html">AI Solutions</a></li>
-                        <li><a href="services.html">Digital Marketing</a></li>
-                    </ul>
+                <div class="footer-nav">
+                    <div>
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="vision-mission.html">Vision</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html">Web Development</a></li>
+                            <li><a href="services.html">App Development</a></li>
+                            <li><a href="services.html">AI Solutions</a></li>
+                            <li><a href="services.html">Marketing</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="copyright">
-                &copy; 2025 Tech Thrive Technology. All Rights Reserved.
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tech Thrive Technology. All Rights Reserved.</p>
             </div>
         </div>
     </footer>

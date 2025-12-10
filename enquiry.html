@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiry - Tech Thrive Technology</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">
-                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="45" stroke="#0B2545" stroke-width="6"/>
-                    <rect x="28" y="55" width="12" height="25" fill="#0B2545"/>
-                    <rect x="44" y="40" width="12" height="40" fill="#0B2545"/>
-                    <rect x="60" y="25" width="12" height="55" fill="#0B2545"/>
-                    <path d="M20 65 C 40 55, 55 45, 80 20" stroke="#14B8A6" stroke-width="6" stroke-linecap="round"/>
-                    <path d="M80 20 L 65 22 M 80 20 L 78 35" stroke="#14B8A6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Tech Thrive<br>Technology
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="6"/>
+                        <rect x="28" y="55" width="12" height="25" fill="currentColor"/>
+                        <rect x="44" y="40" width="12" height="40" fill="currentColor"/>
+                        <rect x="60" y="25" width="12" height="55" fill="currentColor"/>
+                        <path d="M20 65 C 40 55, 55 45, 80 20" stroke="#14B8A6" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M80 20 L 65 22 M 80 20 L 78 35" stroke="#14B8A6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="logo-text">Tech Thrive<br><span>Technology</span></div>
             </a>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
@@ -35,43 +40,52 @@
 
     <div class="page-header">
         <div class="container">
-            <h1>Send an Enquiry</h1>
-            <p>Tell Us About Your Project</p>
+            <h1 class="animate-fade-up">Send an Enquiry</h1>
+            <p class="animate-fade-up delay-100">Let's build something amazing together</p>
         </div>
     </div>
 
     <section class="section">
         <div class="container">
             <div style="max-width: 700px; margin: 0 auto;">
-                <form action="#" method="POST" class="card" style="padding: 2rem;">
+                <form action="#" method="POST" class="card animate-fade-up delay-200" style="padding: 3rem; border-top: 5px solid var(--color-accent);">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <h2 style="font-size: 1.8rem;" class="text-gradient-dark">Project Details</h2>
+                        <p class="text-light">Please fill out the form below and our team will get back to you within 24 hours.</p>
+                    </div>
+
                     <div class="form-group">
                         <label for="name" class="form-label">Full Name</label>
-                        <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe" required>
                     </div>
 
                     <div class="form-group">
                         <label for="email" class="form-label">Email Address</label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="jane@example.com" required>
                     </div>
 
                     <div class="form-group">
                         <label for="service" class="form-label">Service Interested In</label>
-                        <select id="service" name="service" class="form-control" required>
-                            <option value="" disabled selected>Select a service</option>
+                        <select id="service" name="service" class="form-control" required style="cursor: pointer;">
+                            <option value="" disabled selected>Select a service...</option>
                             <option value="web">Web Development</option>
                             <option value="app">App Development</option>
                             <option value="social">Social Media Marketing</option>
                             <option value="ai">AI Solutions</option>
-                            <option value="other">Other</option>
+                            <option value="other">Other Consultation</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea id="message" name="message" class="form-control" placeholder="Tell us more about your requirements..." required></textarea>
+                        <label for="message" class="form-label">How can we help you?</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Tell us about your project goals, timeline, and budget..." required></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Send Enquiry</button>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; border: none; font-size: 1.1rem; padding: 1rem;">Send Enquiry</button>
+                    
+                    <p style="text-align: center; margin-top: 1rem; font-size: 0.85rem; color: #94a3b8;">
+                        Your data is secure. We never spam.
+                    </p>
                 </form>
             </div>
         </div>
@@ -80,8 +94,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div>
-                    <div class="logo" style="color: white; margin-bottom: 1rem;">Tech Thrive Technology</div>
+                <div class="footer-brand">
+                    <div class="logo-text" style="color: white;">Tech Thrive<br><span>Technology</span></div>
                     <p>Your trusted technology partner for innovative digital solutions.</p>
                 </div>
                 <div>
